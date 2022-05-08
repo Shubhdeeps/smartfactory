@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+:root{
+    --sidebar-width: 200px;
+    --header-height: 70px;
+}
+body{
+    overscroll-behavior: none;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app_title_logo{
+    font-family: 'Water Brush';
+    font-weight: 600;
+    user-select: none;
+    margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+    border: none;
+    width: 95%;
+}
+input:focus{
+    outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Side__bar{
+    position: fixed;
+    width: var(--sidebar-width);
+    height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.Side__bar p{
+    font-size: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body__content{
+    position: relative;
+    margin-left: var(--sidebar-width);
+    height: calc(100vh - var(--header-height));
+    overflow-y: scroll;
+}
+
+.mini_body_content{
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100vh - var(--header-height));
+    padding-bottom: 150px;
+}
+
+.header_bar{
+    height: var(--header-height);
+}
+
+path{
+    cursor: pointer;
+}
+
+.nav-items{
+    height: 40px;
+    cursor: pointer;
+}
+
+.one_rem{
+    font-size: 1em;
+}
+
+
+.active:hover{
+    cursor: pointer;
+    background-color: #E6EFFC;
+}
+
+.active:active{
+    background-color: rgb(238, 237, 237);
+    }
+
+.width-70{
+    width: 50vw;
+}
+
+.search-result{
+    width: calc(var(--sidebar-width) - 20px);
+}
+.dropdown-menu{
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.svg-single-country{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 13%;
+    left: 0%;
+}
+
+.scale_me:hover{
+    transform: scale(1.1,1.1);
+    transition: .5s ease;
+}
+
+li{
+    list-style: none;
 }
