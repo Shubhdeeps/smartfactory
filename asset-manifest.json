@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/smartfactory/static/css/main.9d0642d7.css",
-    "main.js": "/smartfactory/static/js/main.477c7734.js",
+    "main.js": "/smartfactory/static/js/main.443cfb8c.js",
     "static/js/405.38db1496.chunk.js": "/smartfactory/static/js/405.38db1496.chunk.js",
     "static/js/860.f6910860.chunk.js": "/smartfactory/static/js/860.f6910860.chunk.js",
     "static/js/591.5046ac42.chunk.js": "/smartfactory/static/js/591.5046ac42.chunk.js",
@@ -9,7 +9,7 @@
     "static/js/630.74234ed7.chunk.js": "/smartfactory/static/js/630.74234ed7.chunk.js",
     "index.html": "/smartfactory/index.html",
     "main.9d0642d7.css.map": "/smartfactory/static/css/main.9d0642d7.css.map",
-    "main.477c7734.js.map": "/smartfactory/static/js/main.477c7734.js.map",
+    "main.443cfb8c.js.map": "/smartfactory/static/js/main.443cfb8c.js.map",
     "405.38db1496.chunk.js.map": "/smartfactory/static/js/405.38db1496.chunk.js.map",
     "860.f6910860.chunk.js.map": "/smartfactory/static/js/860.f6910860.chunk.js.map",
     "591.5046ac42.chunk.js.map": "/smartfactory/static/js/591.5046ac42.chunk.js.map",
@@ -18,6 +18,6 @@
   },
   "entrypoints": [
     "static/css/main.9d0642d7.css",
-    "static/js/main.477c7734.js"
+    "static/js/main.443cfb8c.js"
   ]
 }
