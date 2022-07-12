@@ -28,11 +28,15 @@ function App() {
   const location = useLocation();
   const dispatch = useDispatch()
 
+  //http://localhost:5000/locations
   useEffect(() => { 
     (function fetchLocationData() {
       dispatch(setLocationLoading(true))
-      axios.get('http://localhost:5000/locations')
-      .then(response => dispatch(setInitLocations(response.data)))
+      axios
+      .get('https://raw.githubusercontent.com/Shubhdeeps/personal/main/smartfactory/db.json')
+      .then(response =>{
+        console.log(response.data.locations)
+         dispatch(setInitLocations(response.data.locations))})
       .catch(error => dispatch(setLocationErrorMessage(error.message)))
       .then(() => dispatch(setLocationLoading(false)) )
     })()
@@ -42,8 +46,8 @@ function App() {
   useEffect(() => {
     (function fetchFactoriesData(){
       dispatch(setFactoryLoading(true))
-      axios.get('http://localhost:5000/factories')
-      .then(response => dispatch(setInitFactories(response.data)))
+      axios.get('https://raw.githubusercontent.com/Shubhdeeps/personal/main/smartfactory/db.json')
+      .then(response => dispatch(setInitFactories(response.data.factories)))
       .catch(error => dispatch(setFactoryErrorMessage(error.message)))
       .then(() => dispatch(setFactoryLoading(false)) )
       
